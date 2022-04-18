@@ -1,0 +1,15 @@
+{application, emqx_authn_ldap, [
+    {description, "EMQX LDAP Authentication and Authorization Plugin"},
+    {vsn, "5.0.0"},
+    {modules, []},
+    {registered, [emqx_authn_ldap_sup]},
+    {applications, [kernel, stdlib, map_sets]},
+    {mod, {emqx_authn_ldap_app, []}},
+    {env, []},
+    {licenses, ["Apache-2.0"]},
+    {maintainers, ["EMQ X Team <contact@emqx.io>"]},
+    {links, [
+        {"Homepage", "https://emqx.io/"},
+        {"Github", "https://github.com/emqx/emqx-authn-ldap"}
+    ]}
+]}.
